@@ -20,11 +20,11 @@
 <header id="nav-bar">
   <ul id="nav-list">
     <li class="item"><img src="css/svgs/logo.svg" alt="Logomarca desenvolvedor web Aryman Reis"></li>
-    <li class="item"><a href="#">Projetos</a></li>
-    <li class="item"><a href="#">Especialidades</a></li>
-    <li class="item"><a href="#">Tecnologias</a></li>
-    <li class="item"><a href="#">Mindset</a></li>
-    <li><a class="contact" href="#">Contato</a></li>
+    <li class="item"><a href="#projects-container">Projetos</a></li>
+    <li class="item"><a href="#services-container">Especialidades</a></li>
+    <li class="item"><a href="#technologies-container">Tecnologias</a></li>
+    <li class="item"><a href="#about-container">Sobre Mim</a></li>
+    <li><a class="contact" href="#contact-container">Contato</a></li>
   </ul>
 </header>
 <main>
@@ -60,15 +60,15 @@
     <div id="about">
       <div class="text-container">
         <h3 class="title-about">Sobre mim</h3>
-        <p>
+        <p class="paragraph">
           Sou frellancer apaixonados por design, tecnologia e surf. Unimos a criatividade do design com a energia do surf para criar experiências online únicas e envolventes.
         </p>
-        <p>
+        <p class="paragraph">
           Nosso objetivo é traduzir a emoção das ondas para o mundo digital, desenvolvendo sites que impressionam visualmente e capturam a essência de nossos clientes. vamos dropar essa onda de design e códigos juntos?
         </p>
       </div>
       <div class="contact-container">
-        <a class="contact" href="#">Contato</a>
+        <a class="contact" href="#contact-container">Contato</a>
         <a class="whatsapp" href="#">whatsapp <img src="css/svgs/whatsapp.svg" alt="icone whatsapp" class="icon-whatsapp"></a>
       </div>
     </div>
@@ -78,7 +78,7 @@
     </div>
 
     <div id="soft-skills">
-      <h3 class="title-about">soft skills</h3>
+      <h3 class="title-about">habilidades</h3>
       <div id="skill-container">
         <div class="skill">
           <img src="css/svgs/fluent_design-ideas-24-filled.svg" alt="Icone criatividade">
@@ -225,10 +225,137 @@
           </div>
         </div>
       </div>
-      
     </div>  
   </div>
 
+  <div id="depositions-container">
+    <h3 class="title-testimony">Depoimentos</h3>
+    <div id="depositions">
+      <div class="depositions-box">
+        <div class="perfil">
+          <img src="css/img/perfil_fake.png" alt="perfil fake">
+        <div class="title-perfil">
+          <h4>nome: Lorem ipsum</h4>
+          <h5>empresa: Lorem ipsum</h5>
+        </div>
+        </div>
+        <div class="paragraph">
+          <p>" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid odio dignissimos maxime porro eaque aut. Ab odit vero quos ducimus porro, officia quibusdam hic corrupti placeat, debitis voluptatem alias incidunt. "</p>
+        </div>
+      </div>
+
+      <div class="depositions-box">
+        <div class="perfil">
+          <img src="css/img/perfil_fake.png" alt="perfil fake">
+        <div class="title-perfil">
+          <h4>nome: Lorem ipsum</h4>
+          <h5>empresa: Lorem ipsum</h5>
+        </div>
+        </div>
+        <div class="paragraph">
+          <p>" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid odio dignissimos maxime porro eaque aut. Ab odit vero quos ducimus porro, officia quibusdam hic corrupti placeat, debitis voluptatem alias incidunt. "</p>
+        </div>
+      </div>
+
+      <div class="depositions-box">
+        <div class="perfil">
+          <img src="css/img/perfil_fake.png" alt="perfil fake">
+        <div class="title-perfil">
+          <h4>nome: Lorem ipsum</h4>
+          <h5>empresa: Lorem ipsum</h5>
+        </div>
+        </div>
+        <div class="paragraph">
+          <p>" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid odio dignissimos maxime porro eaque aut. Ab odit vero quos ducimus porro, officia quibusdam hic corrupti placeat, debitis voluptatem alias incidunt. "</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact-container">
+    <div class="box-msg">
+      <div class="msg">
+        <h3 class="msg-title">mensagem</h3>
+          <p class="paragraph">envie suas ideias vamos surfar essa onda de códigos e criatividade juntos!</p>
+      </div>
+      <div class="box-whatsapp">
+        <p class="paragraph">Falar direto comigo!</p>
+        <div class="button-whatsapp">
+          <a class="contact-whatsapp" href="#">whatsapp</a>
+          <img src="css/svgs/whatsapp.svg" alt="icone whatsapp">
+        </div>
+      </div>
+    </div>  
+
+    <div id="form-contact">
+    <form id="form-container">
+      <div class="name-box">
+        <label for="username">Nome Completo:</label>
+        <input id="name" type="text" placeholder="Digite seu nome completo...">
+        <a class="erro">* Digite um nome válido</a>
+      </div>
+      <div class="email-box">
+        <label for="email">Email:</label>
+        <input id="email" type="text" placeholder="Digite seu e-mail...">
+        <a class="erro">* Digite um email válido</a>
+      </div>
+      <div class="message">
+        <label for="message" >Menssagem</label>
+      <textarea id="message" placeholder="Digite suas ideias..."></textarea>
+      <a class="erro">* Complete os campos corretamente.</a>
+      <a class="success">Menssagem enviada com sucesso!</a>
+      </div>
+
+      <button id="submit" type="submit">Enviar</button>
+    </form>
+    </div>  
+  </div>
 </main>
+
+<footer>
+  <div id="footer-container">
+    <div class="footer">
+      <h5 class="title-footer">contatos</h5>
+      <div class="info">
+        <img src="css/svgs/email.svg" alt="email icone">
+        <p>arymanreis@gmail.com</p>
+      </div>
+      <div class="info">
+        <img src="css/svgs/whatsapp_2.svg" alt="email icone">
+        <p>(021) 98642-6569</p>
+      </div>
+  </div>
+
+  <div class="footer">
+      <h5 class="title-footer">redes sociais</h5>
+      <div class="info">
+        <img src="css/svgs/behance.svg" alt="behance icone">
+        <a href="#">behance</a>
+      </div>
+      <div class="info">
+        <img src="css/svgs/github.svg" alt="github icone">
+        <a href="#">github</a>
+      </div>
+      <div class="info">
+        <img src="css/svgs/linkedin.svg" alt="linkedin icone">
+        <a href="#">linkedin</a>
+      </div>
+  </div>
+
+  <div class="footer">
+      <h5 class="title-footer">institucional</h5>
+      <div class="info">
+        <a href="#">faq's</a>
+        <a href="#">termos de uso</a>
+        <a href="#">política de privacidade</a>
+      </div>
+  </div>
+
+  <img class="logo-aryman" src="css/svgs/logo.svg" alt="aryman web designer">
+
+  </div>
+
+  <p>&copy;aryman reis - 2024 - versão 1.0.0</p>
+</footer>
 </body>
 </html>
