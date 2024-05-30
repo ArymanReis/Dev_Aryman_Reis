@@ -1,7 +1,7 @@
 const arrowLeft      = document.querySelector("#arrow-left");
 const arrowRight     = document.querySelector("#arrow-right");
 
-const techsContainer = document.querySelector("#tech-slide");
+const techsContainer = document.querySelector("#tech-slide"); 
 
 
 techsContainer.addEventListener("wheel", (e) => {
@@ -20,6 +20,7 @@ arrowRight.addEventListener('click', () => {
     techsContainer.style.scrollBehavior = "smooth";
     techsContainer.scrollLeft += 900;
 });
+
 
 
 
