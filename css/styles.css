@@ -249,9 +249,10 @@ html {
 
 #about-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   padding: 60px 40px;
+  justify-content: center;
 }
 
 #about {
@@ -263,6 +264,7 @@ html {
   backdrop-filter: blur(10px);
   padding: 20px;
   justify-content: space-between;
+  width: 100%;
 }
 
 .text-container {
@@ -279,7 +281,7 @@ html {
 }
 
 #img img {
-  max-width: 90%;
+  max-width: 100%;
   height: auto;
   object-fit: cover;
 }
@@ -754,7 +756,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 60px 40px;
+  padding: 20px 40px;
   gap: 20px;
   background-color: var(--cor-black2);
 }
@@ -827,3 +829,66 @@ footer {
   font-weight: 400;
   color: var(--cor-gray);
 }
+
+/*Responsivo*/
+
+@media (max-width: 991.98px) {
+
+#title h1 {
+  font-size: 2rem;
+}
+
+#title h2 {
+  font-size: 1rem;
+}
+
+#title span img {
+  width: 20px;
+  height: 20px;
+}
+
+.paragraph {
+  font-size: 0.7rem;
+}
+
+.service {
+  width: 250px;
+  height: 50px;
+}
+  
+.service a {
+  font-size: 0.8rem;
+}
+
+.service img {
+  width: 20px;
+  height: 20px;
+}
+
+.title-about {
+  font-size: 2rem;
+}
+
+#about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#soft-skills {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+#skill-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+}
+
+@media (max-width: 767.98px) { ... }
+
+@media (max-width: 575.98px) { ... }
+
+
+

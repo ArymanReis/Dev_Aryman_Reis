@@ -1,21 +1,21 @@
-const btnOpen  = document.querySelector(".open");
-const btnClose = document.querySelector(".close");
+const btnOpen  = document.querySelectorAll(".open");
+const btnClose = document.querySelectorAll(".close");
 
-const response = document.querySelector(".response");
+const response = document.querySelectorAll(".response");
 
+for (let i = 0; i < btnOpen.length; i++) {
+    btnOpen[i].addEventListener("click", function() {
+        btnOpen[i].classList.toggle("hidden");
+        btnClose[i].classList.toggle("hidden");
+        response[i].classList.toggle("hidden");
+    });
+}
 
-btnOpen.addEventListener('click', function() {
-
-    response.style.display = 'block';
-    btnClose.style.display = 'block';
-    btnOpen.style.display = 'none';
-});
-
-btnClose.addEventListener('click', function() {
-
-    response.style.display = 'none';
-    btnOpen.style.display = 'block';
-    btnClose.style.display = 'none';
-});
-
+for (let i = 0; i < btnClose.length; i++) {
+    btnClose[i].addEventListener("click", function() {
+        btnOpen[i].classList.toggle("hidden");
+        btnClose[i].classList.toggle("hidden");
+        response[i].classList.toggle("hidden");
+    });
+}
 

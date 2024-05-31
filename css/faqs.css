@@ -117,9 +117,9 @@ article {
   height: auto;
   flex-direction: column;
   gap: 20px;
-  padding: 40px;
+  padding: 20px 40px;
   background-color: var(--cor-black2);
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .title-faq {
@@ -147,5 +147,90 @@ article {
   width: 20px;
   height: 20px;
   cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/*Footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  gap: 20px;
+  background-color: var(--cor-black2);
+  margin-top: 40px;
+}
+
+#footer-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logo-aryman {
+  width: 35px;
+  height: auto;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.title-footer {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--cor-gray);
+}
+
+.info-institutional {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.info img {
+  width: 22px;
+  height: auto;
+}
+
+.footer a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--cor-gray);
+  transition: 0.5s;
+}
+
+.footer a:hover {
+  opacity: 0.8;
+}
+
+.footer p {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--cor-gray);
+}
+
+.version {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--cor-gray);
 }
 
