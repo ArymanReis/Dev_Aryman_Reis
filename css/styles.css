@@ -400,20 +400,26 @@ html {
   border: 1px solid var(--cor-gray);
 }
 
-#arrows {
+#arrows, #arrows-project {
   display: flex;
   position: absolute;
+  justify-content: center;
+  align-items: center;
   gap: 85vw;
   top: 50%;
   transition: 0.5s;
+  margin: 0 auto;
 }
 
-#arrows:hover {
-  opacity: 0.8;
+#arrows, #arrows-project:hover {
+  opacity: 0.5;
   cursor: pointer;
 }
 
-#arrow-left, #arrow-right {
+#arrow-left,
+#arrow-right,
+#arrow-left-project,
+#arrow-right-project {
   width: 30px;
   height: 30px;
 }
@@ -423,21 +429,31 @@ html {
 #depositions-container {
   display: flex;
   flex-direction: column;
+  position: relative;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: auto;
   padding: 60px 0;
   gap: 20px;
 }
 
 #cards-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
   gap: 20px;
   width: 100%;
   height: auto;
-  padding: 0 40px;
+  overflow: hidden;
+  padding-left: 40px;
+  flex: none;
+}
+
+#cards-container-1,
+#cards-container-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  height: auto;
 }
 
 .card-info {
@@ -445,7 +461,10 @@ html {
   flex-direction: column;
   gap: 20px;
   padding: 20px;
+  width: 100%;
 }
+
+
 
 .card {
   display: flex;
@@ -453,6 +472,7 @@ html {
   border-bottom: 2px solid;
   border-image: var(--gradientorder-border-image);
   background-color: var(--cor-black2);
+  width: 300px;
 }
 
 .card img {
