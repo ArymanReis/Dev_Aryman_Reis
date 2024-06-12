@@ -354,25 +354,30 @@
     </div>  
 
     <div id="form-contact">
-    <form id="form-container">
+    <form id="form-container" action="https://formsubmit.co/arymanreis@gmail.com" method="POST">
       <div class="name-box">
         <label for="username">Nome Completo:</label>
-        <input id="name" type="text" placeholder="Digite seu nome completo...">
+        <input id="username" type="text" name="name" placeholder="Digite seu nome completo..." required>
         <a class="erro">* Digite um nome válido</a>
       </div>
       <div class="email-box">
         <label for="email">Email:</label>
-        <input id="email" type="text" placeholder="Digite seu e-mail...">
+        <input id="email" type="email" name="email" placeholder="Digite seu e-mail..." required>
         <a class="erro">* Digite um email válido</a>
       </div>
       <div class="message">
         <label for="message" >Menssagem</label>
-      <textarea id="message" placeholder="Digite suas ideias..."></textarea>
+        <textarea id="message" type="text" name="message" placeholder="Digite suas ideias..." required></textarea>
       <a class="erro">* Complete os campos corretamente.</a>
       <a class="success">Menssagem enviada com sucesso!</a>
       </div>
 
       <button id="submit" type="submit">Enviar</button>
+
+      <input type="hidden" name="_subject" value="Novo Contato!">
+      <input type="text" name="_honey" style="display: none;">
+      <input type="hidden" name="_captcha" value="false">
+
     </form>
     </div>  
   </div>
